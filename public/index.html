@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ComeWith</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+  <img src="images/logo.png" alt="Come With" width="600" height="90" id="logo">
+  <br><br>
+
+  <h2 id="heading">Click an Activity Below <br> to Join an NYUAD Community</h2>
+
+  
+  <div class="flex-container" id="sports">
+    <div class="containerheader">S p o r t s</div>
+    <div id="Tennis" class="container">Tennis 🎾</div>
+    <div id="Basketball" class="container">Basketball 🏀</div>
+    <div id="Badminton" class="container">Badminton 🏸</div>
+    <div id="soccer" class="container">soccer ⚽️</div>
+  </div><br><br>
+  
+  <div class="flex-container" id="events">
+    <div class="containerheader">Events On-Campus </div>
+    <div id="event1" class="container">Rooftop Rhythms 🎤<br> Friday, Nov 18 @ 8pm <br></div>
+    <div id="event2" class="container">Hekayah | The Story UAE National Day Celebration 🇦🇪<br> Monday, Nov28 @
+      7:30pm<br></div>
+    <div id="event3" class="container">Temporary People A Multidisciplinary Docu-fictive performance 🎭 <br>Sat, Nov22 @
+      7:30pm<br></div>
+  </div><br><br>
+  
+  <div class="flex-container" id="conferences">
+    <div class="containerheader">Campus Confrences</div>
+    <div id="conference1" class="container">Extremism: A Philosophical Analysis 🤓<br> November 9, 2022 @ 6:30 pm <br>
+    </div>
+    <div id="conference2" class="container">6th NYUAD Transportation Symposium 🤓<br> November 22, 2022<br></div>
+    <div id="conference3" class="container">The (Impossible) Decolonization of the Western Museum 🤓<br>November 23 @
+      6:30pm<br></div>
+  </div>
+
+  
+  <div class="flex-container" id="new">
+    <div class="containerheader">New Activities</div>
+    <div id="div1" class="container">Thrift shopping at hamdan street on Saturday 🛍 <br> @ 2:30 pm <br></div>
+    <div id="div2" class="container">Hiking at Al Qudra lake on Sunday 🏞</div>
+  </div>
+
+  <br><br>
+  <div class="flex-container" id="create">
+    <div class="containerheader">Create a new hang-out</div>
+    <div class="create" data-modal-target="#modal">Create your own activity </div>
+  </div>
+  <br><br>
+
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Create Your Own</div>
+
+    </div>
+    <div class="modal-body">
+
+      <div id="input">
+        <div id="title2">Activity Name:</div>
+        <input name="activity" id="Activity">
+        <div id="title2">Activity type:</div>
+        <input name="category" id="Category">
+        
+      </div>
+      <input type="image" src="images/arrow.png" type="submit" name="saveForm" id="btn" data-close-button class="close-button">&times;
+      </form>
+    </div>
+
+  </div>
+  </div>
+  <div id="overlay"></div>
+
+  <div id="room" class="room" style="display: none;">
+    <div class="messages" id="messages"></div>
+    <div class="send-messages" id="send-messages">
+      <button class="send-button" id="send-button" hidden> Type your message </button>
+
+      <input class="send-input" id="my-message" type="text" placeholder="Type your message "  />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+
+</html>

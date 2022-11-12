@@ -96,14 +96,30 @@ It was a challenge designing the pop-up and making it appear and disapear once t
           
 - This is helpful for people when they join a chat room and the previous messages are still there.
 
-## Next steps:
-
-We would like to add more events in the web-application. One of the ideas we have is fetch data from APIs such as eventbrite or other platforms.
-Moreover, We would like to improve the design and have the name of the activity picked by the user show in the chat box.
-We would also like to use a server that can back up the data and thus the application will run on peer to peer networks and a database to back up all the data.
-
 ## Website Design
 
 <img width="1440" alt="Screen Shot 2022-11-10 at 10 28 22 AM" src="https://user-images.githubusercontent.com/90772853/201492685-ba141728-51b5-4c3d-9a47-289b76afaeff.png">
 <img width="1440" alt="Screen Shot 2022-11-10 at 10 27 26 AM" src="https://user-images.githubusercontent.com/90772853/201492693-97583c86-db72-4cec-befb-01c7f9af80aa.png">
 <img width="1440" alt="Screen Shot 2022-11-10 at 10 27 13 AM" src="https://user-images.githubusercontent.com/90772853/201492695-d68c8aad-6d8f-46b4-beaf-42d0bc9524f8.png">
+
+## Basil's (My) Journey:
+
+- I started with making the website's skeleton. I was confused what the user should see when the website starts.
+- The options were either an alert asking their name or the main webpage and then on discussion with my teammate we decided that the name is to be asked when you click on each activity.
+- It was extremely hard syncing the activities created by people with eachother. 
+- Apart from that, each chat room should be different and should be saved even when people go back to the main page.
+- We got into a problem where, because of a very small thing, the new activity was being duplicated, however, just changing io to socket fixed it.
+        
+        activities.forEach((e) => {
+          socket.emit("activity", e)
+        })
+
+- Creating of message elements and those activity elements, styling, setting their class names, id names, amking sure of chat rooms working differently, and working on the whole backend taught me immensely and when I do something similar again, I would definitely be a lot faster.
+- I also tried a lot of different colour schemes and styling chat room in a way where it looks nice.
+## Next steps:
+
+- We would like to add more events in the web-application. One of the ideas we have is fetch data from APIs such as eventbrite or other platforms.
+- Moreover, We would like to improve the design and have the name of the activity picked by the user show in the chat box.
+- We would also like to use a server that can back up the data and thus the application will run on peer to peer networks and a database to back up all the data. 
+- A back buttton in chat room as well.
+- Registration of usernames and passwords.

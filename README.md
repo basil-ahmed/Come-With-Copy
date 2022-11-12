@@ -1,6 +1,6 @@
 # Come-With
 
-![Website Link](https://come-with-updated.glitch.me/)
+[Website Link](https://come-with-updated.glitch.me/)
 
 ## Concept:
 
